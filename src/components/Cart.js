@@ -11,7 +11,6 @@ const Cart = ({ isOpen, onClose }) => {
   const dispatch = useDispatch();
 
   const checkoutItemsHandler = async () => {
-    console.log(cartItem);
     await fetch(
       "https://nice-theater-338718-default-rtdb.firebaseio.com/restaurant-cart.json",
       {
